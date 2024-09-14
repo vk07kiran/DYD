@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "797901833540",
+    "firebase_url": "https://projectii-c9257-default-rtdb.firebaseio.com",
+    "project_id": "projectii-c9257",
+    "storage_bucket": "projectii-c9257.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797901833540:android:5741f807bfd54258f48311",
+        "android_client_info": {
+          "package_name": "com.projectii.dyd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9_GElKLvLGgKVX_PRlZyEqRbKmV99sws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

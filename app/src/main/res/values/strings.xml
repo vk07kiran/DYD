@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Rentals</string>
+    <string name="title_home">Home</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_profile">Profile</string>
+    <string name="my_desc">No bio yet.</string>
+    <string name="about_me">About Me</string>
+    <string name="contact">My Contact Details</string>
+    <string name="CurrentRents">Vehicles Rented By Me</string>
+    <string name="ratings">Star Ratings</string>
+    <string name="samplereview">No reviews yet.</string>
+
+    <string-array name="bikes_options">
+        <item>Petrolium Bikes</item>
+        <item>Electric Bikes</item>
+        <item>Hybrid Bikes</item>
+    </string-array>
+
+    <string-array name="bycycle_options">
+        <item>Mountain Bycycles</item>
+        <item>Road Bycycles</item>
+        <item>Electric Bycycles</item>
+        <item>Hybrid Bycycles</item>
+    </string-array>
+
+    <string-array name="cars_options">
+        <item>Electric Cars</item>
+        <item>SUV Cars</item>
+        <item>Petrol Cars</item>
+        <item>Diesel Cars</item>
+        <item>Hydrogen Cars</item>
+    </string-array>
+
+</resources>

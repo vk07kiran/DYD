@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/topbg"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/title_add_vehicles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Vehicles"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Icons with Labels -->
+    <LinearLayout
+        android:id="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_below="@id/title_add_vehicles"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_corner_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Personal Helper -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bycycleImage"
+                android:layout_width="118dp"
+                android:layout_height="120dp"
+                android:src="@drawable/bycycle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:text="Add Bycycles"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <!-- Manning Booth -->
+        <LinearLayout
+            android:layout_width="112dp"
+            android:layout_height="151dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bikeImage"
+                android:layout_width="135dp"
+                android:layout_height="121dp"
+                android:src="@drawable/bike" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Add Bikes"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/carImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/car" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Add Cars"
+                android:textColor="@color/black"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Vehicles Added Section Title -->
+    <TextView
+        android:id="@+id/title_vehicles_added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Added Vehicles"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/icons"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- ScrollView for Vehicle Collections -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_vehicles_added"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true">
+
+    <ScrollView
+        android:id="@+id/scrollView_vehicles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_vehicles_added"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:fillViewport="true"
+        android:padding="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/myVehiclesCollections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>
